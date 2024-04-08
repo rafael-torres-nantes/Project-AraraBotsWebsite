@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 .navbar-brand {
     color: white;
     margin-left: 2rem;
@@ -9,18 +13,36 @@
 }
 
 header{
+    position: absolute;
+    top: 0; left: 0; right: 0;
     background-color: #101010;
     margin: 0.3rem;
     border: 3px solid #101010;
     border-radius: 1rem;
 }
 
+main {
+    position: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 8rem;
+}
 footer{
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
     background-color: #101010;
-    border: 3px solid #101010;
-    border-radius: 0.2rem;
+    border: 0.8px solid #101010;
 }   
-
 .bi {
     color: white;
+}
+
+.fw-bolder {
+    color: #FFFFFF;
+    font-size: small;
+}
+
+.div.p-3 {
+    padding: 0rem;
+    margin: 0;
 }
