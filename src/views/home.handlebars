@@ -1,0 +1,26 @@
+{{!-- /src/views/HomePage.handlebars --}}
+{{!-- Página inicial da aplicação --}}
+<div class="container mt-5">
+    <h1 class="main-title">Find where your favorite entertainment is!</h1>
+    <div class="search-bar mb-3">
+        <form action="/front" method="GET">
+            <input type="text" class="form-control mb-3" placeholder="Search Title" name="title">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+    {{!-- Lista de resultados de conteúdos --}}
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+         {{#each movies}}
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <p class="card-text">Year: {{this.year}}</p>
+                    <p class="card-text">Type: <span class="badge bg-primary">{{this.type}}</span> </p>
+                    <a href="/front/titles/{{this.id}}" class="btn btn-primary">More infos</a> <!-- Link para a página de detalhes -->
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
