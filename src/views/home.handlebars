@@ -1,26 +1,56 @@
-{{!-- /src/views/HomePage.handlebars --}}
-{{!-- Página inicial da aplicação --}}
-<div class="container mt-5">
-    <h1 class="main-title">Find where your favorite entertainment is!</h1>
-    <div class="search-bar mb-3">
-        <form action="/front" method="GET">
-            <input type="text" class="form-control mb-3" placeholder="Search Title" name="title">
-            <button type="submit" class="btn btn-primary">Search</button>
-        </form>
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Designed for engineers</h1>
+      <h3 class="fw-normal text-muted mb-3">Build anything you want with Aperture</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a class="icon-link" href="#">
+          Learn more
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+        <a class="icon-link" href="#">
+          Buy
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
     </div>
-    {{!-- Lista de resultados de conteúdos --}}
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-         {{#each movies}}
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{this.title}}</h5>
-                    <p class="card-text">Year: {{this.year}}</p>
-                    <p class="card-text">Type: <span class="badge bg-primary">{{this.type}}</span> </p>
-                    <a href="/front/titles/{{this.id}}" class="btn btn-primary">More infos</a> <!-- Link para a página de detalhes -->
-                </div>
-            </div>
-        </div>
-        {{/each}}
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Designed for engineers</h1>
+      <h3 class="fw-normal text-muted mb-3">Build anything you want with Aperture</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a class="icon-link" href="#">
+          Learn more
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+        <a class="icon-link" href="#">
+          Buy
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
     </div>
-</div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Designed for engineers</h1>
+      <h3 class="fw-normal text-muted mb-3">Build anything you want with Aperture</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a class="icon-link" href="#">
+          Learn more
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+        <a class="icon-link" href="#">
+          Buy
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
