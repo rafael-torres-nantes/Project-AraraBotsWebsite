@@ -25,7 +25,7 @@ main {
     position: flex;
     height: 100%;
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 10rem;
 }
 
 footer{
@@ -43,6 +43,13 @@ footer{
     font-size: small;
 }
 
+
+.ararabots_welcome {
+    /* background-color: #101010; */
+    color: #FFFFFF;
+    background-image: linear-gradient(to bottom right, #cb4b4b, #7e1b1b);
+
+}
 
 .product-device {
     position: absolute;
