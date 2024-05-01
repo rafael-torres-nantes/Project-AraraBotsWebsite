@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 .navbar-brand {
     color: white;
     margin-left: 2rem;
@@ -12,9 +13,7 @@
     color: #FFFFFF;
 }
 
-header{
-    position: absolute;
-    top: 0; left: 0; right: 0;
+.fixed-top {
     background-color: #101010;
     margin: 0.3rem;
     border: 3px solid #101010;
@@ -22,27 +21,9 @@ header{
 }
 
 main {
-    position: flex;
-    height: 100%;
-    width: 100%;
-    margin-top: 10rem;
+    background-color: white;
+    
 }
-
-footer{
-    position: flex;
-    bottom: 0; left: 0; right: 0;
-    background-color: #101010;
-    border: 0.8px solid #101010;
-}   
-.bi {
-    color: white;
-}
-
-.fw-bolder {
-    color: #FFFFFF;
-    font-size: small;
-}
-
 
 .ararabots_welcome {
     /* background-color: #101010; */
@@ -50,6 +31,28 @@ footer{
     background-image: linear-gradient(to bottom right, #cb4b4b, #7e1b1b);
 
 }
+
+.ararabots_quem_somos {
+    /* quem_somos */
+    color: #FFFFFF;
+    background-image: url('/images/arara2.jpg');
+}
+
+footer{
+    position: flex;
+    background-color: #101010;
+    border: 0.8px solid #101010;
+}   
+
+.fw-bolder {
+    color: #FFFFFF;
+    font-size: larger;
+}
+
+.bi {
+    color: white;
+}
+
 
 .product-device {
     position: absolute;
