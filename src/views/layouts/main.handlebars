@@ -47,7 +47,7 @@
   <header>
     <nav class="navbar fixed-top navbar-expand-lg">
       <a class="navbar-brand" href="/">
-        <img src="images/arara_no_bg.png" alt="AraraLogo" width="50" height="50" class="d-inline-block align-text-top">
+        <img src="images/logoAraraBots/arara_no_bg.png" alt="AraraLogo" width="50" height="50" class="d-inline-block align-text-top">
         AraraBots</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -57,19 +57,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Quem Somos</a>
+            <a class="nav-link" href="#quem-somos">Quem Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Categorias</a>
+            <a class="nav-link" href="/categorias">Categorias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Eventos</a>
+            <a class="nav-link" href="/eventos">Eventos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Ingresso</a>
+            <a class="nav-link" href="/ingresso">Ingresso</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Patrocínio</a>
+            <a class="nav-link" href="/patrocinio">Patrocínio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/">Contato</a>
@@ -86,31 +86,33 @@
   <footer class="text-white text-center text-lg-start">
 
     <!--Grid container-->
-    <div class="container p-1">
+    <div class="container p-md-3">
 
       <!--Grid row-->
       <div class="row justify-content-between">
 
         <!--Grid column-->
         <div class="nav col-md-4 justify-content-around list-unstyled d-flex">
+          
           {{!-- Create a row and cols set the lenght '1' --}}
-          <div class="row row-cols-lg-1">
+          <div class="row">
 
             {{!-- Create a Text saying: Entre em contato conosco --}}
-            <p class="fw-bolder">Entre em contato conosco:</p>
+            <div class="fw-bolder">
+              Entre em contato conosco:
+            </div>
 
             {{!-- Create a Icons Shortcut to link the user to another page --}}
-            <ul class="nav list-unstyled d-flex">
-              <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/company/ararabots/"><svg
+            <ul class="nav list-unstyled mx-lg-3 d-flex">
+              <li class="mx-lg-3"><a class="text-body-secondary" href="https://www.linkedin.com/company/ararabots/"><svg
                     class="bi" width="36" height="36">
                     <use xlink:href="#linkedin"></use>
                   </svg></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/ararabots/"><svg
+              <li class="mx-lg-3"><a class="text-body-secondary" href="https://www.instagram.com/ararabots/"><svg
                     class="bi" width="36" height="36">
                     <use xlink:href="#instagram"></use>
                   </svg></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="#"><svg 
-                    class="bi" width="36" height="36">
+              <li class="mx-lg-3"><a class="text-body-secondary" href="#"><svg class="bi" width="36" height="36">
                     <use xlink:href="#email"></use>
                   </svg></a></li>
             </ul>
@@ -122,22 +124,22 @@
         <div class="col-lg-4">
 
           {{!-- Create a row and cols set the lenght '1' --}}
-          <div class="row row-cols-lg-1 text-end">
+          <div class="row row-cols-md-1 text-end">
 
             <!--Grid column-->
-            <div class="col p-1">
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <p class="fw-bolder p-0">ararabots@googlegroups.com</p>
+            <div class="col">
+              <ul class="nav flex-column m-md-1">
+                <li class="nav-item fw-bolder mt-lg-2">
+                  ararabots@googlegroups.com
                 </li>
-                <li class="nav-item mb-2">
-                  <p class="p-0">Universidade Federal do Mato Grosso do Sul</p>
+                <li class="nav-item mt-lg-2">
+                  Universidade Federal do Mato Grosso do Sul
                 </li>
-                <li class="nav-item mb-2">
-                  <p class="p-0">Av. Costa e Silva, nº XXX</p>
+                <li class="nav-item mt-lg-2">
+                  Av. Costa e Silva, nº XXX
                 </li>
-                <li class="nav-item mb-2">
-                  <p class="p-0">Campo Grande - MS, Brasil</p>
+                <li class="nav-item mt-lg-2">
+                  Campo Grande - MS, Brasil
                 </li>
               </ul>
             </div>
